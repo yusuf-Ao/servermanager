@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/server-service/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="persistence-service" />
+        <module name="eureka-server" />
+        <module name="notification-service" />
+        <module name="commons" />
+        <module name="server-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="clients" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="clients" options="-parameters" />
+      <module name="commons" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="persistence-service" options="-parameters" />
+      <module name="server-service" options="-parameters" />
+      <module name="servermanager" options="" />
+    </option>
+  </component>
+</project>
